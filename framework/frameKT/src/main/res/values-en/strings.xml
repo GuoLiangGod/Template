@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+  <string name="please_permission">Please grant permission</string>
+  <string name="setting">set up</string>
+  <string name="cancel">cancel</string>
+  <string name="disable_the_prompt">Permission disabled, please grant manually</string>
+  <string name="unknown_error">The current network is not good</string>
+  <string name="parse_error">Parsing error</string>
+  <string name="please_check_the_network_status">Please check the network status</string>
+  <string name="protocol_error">Protocol error</string>
+  <string name="certificate_error">The current network is not available</string>
+  <string name="connection_timeout">connection timed out</string>
+</resources>

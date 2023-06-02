@@ -1,0 +1,5 @@
+include ':customView'
+include ':frameKT'
+rootProject.name='framework'
+include ':app'
+include ':frame'

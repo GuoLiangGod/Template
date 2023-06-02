@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyToolbar">
+        <!--标题栏左边图片-->
+        <attr name="left_image" format="reference"/>
+        <!--标题栏文字-->
+        <attr name="app_title" format="string"/>
+        <!--标题栏右边图片-->
+        <attr name="right_image" format="reference"/>
+        <!--标题栏左边边距-->
+        <attr name="left_padding" format="dimension"/>
+        <!--标题栏右边边距-->
+        <attr name="right_padding" format="dimension"/>
+        <!--标题栏右边文字-->
+        <attr name="right_title" format="string"/>
+        <!--标题栏左边文字-->
+        <attr name="left_title" format="string"/>
+        <!--标题栏右边文字颜色-->
+        <attr name="right_title_color" format="color"/>
+        <!--标题栏右边文字-->
+        <attr name="left_image_null" format="boolean"/>
+        <!--标题栏颜色-->
+        <attr name="app_bar_drawable" format="reference"/>
+        <!--标题栏颜色-->
+        <attr name="app_bar_color" format="color"/>
+        <!--标题栏文字颜色-->
+        <attr name="app_title_color" format="color"/>
+    </declare-styleable>
+    <!--自定义属性-->
+    <declare-styleable name="CommItemView">
+        <attr name="title_text" format="string"/>
+        <attr name="title_text_size" format="dimension"/>
+        <attr name="right_text" format="string"/>
+        <attr name="right_icon" format="reference"/>
+        <attr name="icon" format="reference"/>
+        <attr name="show_rule" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="EasySwipeMenuLayout">
+        <attr name="leftMenuView" format="reference" />
+        <attr name="rightMenuView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="canRightSwipe" format="boolean" />
+        <attr name="canLeftSwipe" format="boolean" />
+        <attr name="fraction" format="float" />
+    </declare-styleable>
+    <declare-styleable name="VideoPlayerView">
+        <attr name="is_control" format="boolean"/>
+        <attr name="is_Title" format="boolean"/>
+        <attr name="control_follow_video" format="boolean"/>
+        <attr name="forbid_zoom" format="boolean"/>
+        <attr name="show_edit" format="boolean"/>
+        <attr name="show_share" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="CircleLayout">
+        <attr name="radium" format="dimension"/>
+        <attr name="changeCorner" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="AppBarView">
+        <!--标题栏文字-->
+        <attr name="app_bar_title" format="string"/>
+        <!--标题栏背景-->
+        <attr name="app_bar_background" format="reference|color"/>
+        <!--标题栏文字大小-->
+        <attr name="app_bar_text_size" format="dimension"/>
+        <!--标题栏文字颜色-->
+        <attr name="app_bar_text_color" format="color"/>
+        <!--左边图片-->
+        <attr name="app_bar_left_image" format="reference"/>
+        <!--左边文字-->
+        <attr name="app_bar_left_title" format="string"/>
+        <!--左边文字大小-->
+        <attr name="app_bar_left_text_size" format="dimension"/>
+        <!--左边文字颜色-->
+        <attr name="app_bar_left_text_color" format="color"/>
+        <!--左边右字背景-->
+        <attr name="app_bar_left_text_drawable" format="reference"/>
+        <!--左边边距-->
+        <attr name="app_bar_left_padding" format="dimension"/>
+        <!--右边图片-->
+        <attr name="app_bar_right_image" format="reference"/>
+        <!--右边文字-->
+        <attr name="app_bar_right_title" format="string"/>
+        <!--右边右字大小-->
+        <attr name="app_bar_right_text_size" format="dimension"/>
+        <!--右边右字颜色-->
+        <attr name="app_bar_right_text_color" format="color"/>
+        <!--右边右字背景-->
+        <attr name="app_bar_right_text_drawable" format="reference"/>
+        <!--右边边距-->
+        <attr name="app_bar_right_padding" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="OverScrollLayout">
+        <attr name="prl_refreshEnable" format="boolean" />
+        <attr name="prl_loadMoreEnable" format="boolean" />
+        <attr name="prl_twinkEnable" format="boolean" />
+        <attr name="prl_autoLoadingEnable" format="boolean" />
+        <attr name="prl_headerFront" format="boolean" />
+        <attr name="prl_footerFront" format="boolean" />
+
+        <attr name="prl_refreshTriggerDistance" format="dimension" />
+        <attr name="prl_loadTriggerDistance" format="dimension" />
+        <attr name="prl_pullDownMaxDistance" format="dimension" />
+        <attr name="prl_pullUpMaxDistance" format="dimension" />
+        <attr name="prl_topOverScrollMaxTriggerOffset" format="dimension" />
+        <attr name="prl_downOverScrollMaxTriggerOffset" format="dimension" />
+
+        <attr name="prl_resetAnimationDuring" format="integer" />
+        <attr name="prl_refreshAnimationDuring" format="integer" />
+        <attr name="prl_overScrollMinDuring" format="integer" />
+
+        <attr name="prl_dragDampingRatio" format="float" />
+        <attr name="prl_overScrollDampingRatio" format="float" />
+        <attr name="prl_overScrollAdjustValue" format="float" />
+
+        <attr name="prl_targetId" format="reference" />
+
+        <attr name="prl_headerViewId" format="reference" />
+        <attr name="prl_footerViewId" format="reference" />
+
+        <attr name="prl_headerClass" format="string" />
+        <attr name="prl_footerClass" format="string" />
+
+        <attr name="prl_headerShowGravity" format="enum">
+            <enum name="follow" value="0" />
+            <enum name="follow_placeholder" value="1" />
+            <enum name="follow_center" value="2" />
+            <enum name="placeholder" value="3" />
+            <enum name="placeholder_follow" value="4" />
+            <enum name="placeholder_center" value="5" />
+            <enum name="center" value="6" />
+            <enum name="center_follow" value="7" />
+        </attr>
+
+        <attr name="prl_footerShowGravity" format="enum">
+            <enum name="follow" value="0" />
+            <enum name="follow_placeholder" value="1" />
+            <enum name="follow_center" value="2" />
+            <enum name="placeholder" value="3" />
+            <enum name="placeholder_follow" value="4" />
+            <enum name="placeholder_center" value="5" />
+            <enum name="center" value="6" />
+            <enum name="center_follow" value="7" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Banner">
+        <attr name="interval" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="CustomSeekBar">
+        <attr name="background" format="reference"/>
+        <attr name="sliding_drawable" format="reference"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,1 @@
+apply from: rootDir.toString()+"/build_module.gradle"
