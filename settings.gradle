@@ -14,8 +14,8 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Template"
 include ':app'
-include ':frameKT'
+include ':frame'
 include ':customView'
 
-project(':frameKT').projectDir = new File('framework/frameKT')
+project(':frame').projectDir = new File('framework/frame')
 project(':customView').projectDir = new File('framework/customView')

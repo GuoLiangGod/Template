@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.guoliang.frame.test", appContext.packageName)
+        assertEquals("com.guoliang.framekt.test", appContext.packageName)
     }
 }

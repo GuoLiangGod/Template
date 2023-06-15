@@ -153,7 +153,7 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
         sb.append("\nVERSION_NAME:").append(AppUtils.getVersionName(mContext));//VERSION_NAME
         sb.append("\nBUILD_TYPE:").append(AppUtils.isApkInDebug(mContext));//是否是DEBUG版本
         //设备信息
-        sb.append("\nMODEL:").append(android.os.Build.MODEL);
+        sb.append("\nMODEL:").append(Build.MODEL);
         sb.append("\nRELEASE:").append(Build.VERSION.RELEASE);
         sb.append("\nSDK:").append(Build.VERSION.SDK_INT);
         sb.append("\nEXCEPTION:").append(ex.getLocalizedMessage());

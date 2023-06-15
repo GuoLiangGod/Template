@@ -1,5 +1,7 @@
 package com.guoliang.frame.util;
 
+import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
@@ -7,6 +9,14 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.provider.Settings;
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
+
+import org.jetbrains.annotations.NotNull;
+
+import static android.content.Context.INPUT_METHOD_SERVICE;
 
 /**
  * @Description:
@@ -103,7 +113,7 @@ public class AppUtils {
 
                     context.getPackageName(), 0);
 
-            return (int) packageInfo.getLongVersionCode();
+            return (int) packageInfo.versionCode;
 
         } catch (Exception e) {
 
@@ -203,4 +213,35 @@ public class AppUtils {
 
     }
 
+    /**
+     * 获取手机IMEI号
+     *
+     * 需要动态权限: android.permission.READ_PHONE_STATE
+     */
+    @SuppressLint("HardwareIds")
+    public static String getAndroidID(@NotNull Context context) {
+        return Settings.Secure.getString(context.getApplicationContext().getContentResolver(), Settings.Secure.ANDROID_ID);
+    }
+
+    /**
+     * 显示键盘
+     *
+     * @param et 输入焦点
+     */
+    public static void showInput(Context context,final EditText et) {
+        et.requestFocus();
+        InputMethodManager imm = (InputMethodManager) context.getSystemService(INPUT_METHOD_SERVICE);
+        imm.showSoftInput(et, InputMethodManager.SHOW_IMPLICIT);
+    }
+
+    /**
+     * 隐藏键盘
+     */
+    public static void hideInput(Activity activity) {
+        InputMethodManager imm = (InputMethodManager) activity.getSystemService(INPUT_METHOD_SERVICE);
+        View v = activity.getWindow().peekDecorView();
+        if (null != v) {
+            imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+        }
+    }
 }
